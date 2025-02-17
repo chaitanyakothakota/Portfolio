@@ -440,3 +440,19 @@
         cardScroll();
     });
 })(jQuery);
+
+
+/* Experience Portfolio Section Auto Play Effect Logic */
+document.addEventListener("DOMContentLoaded", function () {
+    let experienceTabsContainer = document.querySelector("#portfolio .nav");
+    if (!experienceTabsContainer) return;
+    let tabs = experienceTabsContainer.querySelectorAll("a");
+    let index = 0;
+    let intervalTime = 5000;
+    function switchTab() {
+        let nextIndex = (index + 1) % tabs.length;
+        tabs[nextIndex].click();
+        index = nextIndex;
+    }
+    setInterval(switchTab, intervalTime);
+});
