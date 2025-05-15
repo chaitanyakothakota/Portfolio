@@ -14401,8 +14401,7 @@ strong {
   max-height: 48px;
 }
 .cooperation-icon li img {
-  max-height: 60px;
-  min-width: 200px;
+  max-width: 150px;
   border: 1px solid var(--tc-border-1);
   border-radius: 12px;
 }
